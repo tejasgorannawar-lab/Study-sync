@@ -1,1 +1,51 @@
-hi
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudySync | Focus Better</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="sidebar">
+        <h2>StudySync</h2>
+        <ul>
+            <li onclick="showPage('dashboard')">Dashboard</li>
+            <li onclick="showPage('tasks')">Add Task</li>
+            <li onclick="showPage('profile')">Profile</li>
+        </ul>
+    </nav>
+
+    <main class="content">
+        
+        <section id="dashboard" class="page active">
+            <h1>Welcome Back!</h1>
+            <div class="stats-card">
+                <p>Tasks Completed: <span id="task-count">0</span></p>
+            </div>
+        </section>
+
+        <section id="tasks" class="page">
+            <h1>Create New Task</h1>
+            <div class="task-form">
+                <input type="text" id="taskInput" placeholder="Enter subject or topic...">
+                <button onclick="addTask()">Add to List</button>
+            </div>
+            <ul id="taskList"></ul>
+        </section>
+
+        <section id="profile" class="page">
+            <h1>Your Profile</h1>
+            <div class="profile-info">
+                <p><strong>Name:</strong> Alex Student</p>
+                <p><strong>Goal:</strong> 4 Hours/Day</p>
+                <button class="logout-btn">Log Out</button>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
