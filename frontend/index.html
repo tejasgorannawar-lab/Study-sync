@@ -3,48 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>StudySync | Focus Better</title>
+    <title>Study Sync | Home</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
 </head>
 <body>
 
-    <nav class="sidebar">
-        <h2>StudySync</h2>
-        <ul>
-            <li onclick="showPage('dashboard')">Dashboard</li>
-            <li onclick="showPage('tasks')">Add Task</li>
-            <li onclick="showPage('profile')">Profile</li>
-        </ul>
-    </nav>
-
-    <main class="content">
-        
-        <section id="dashboard" class="page active">
-            <h1>Welcome Back!</h1>
-            <div class="stats-card">
-                <p>Tasks Completed: <span id="task-count">0</span></p>
+    <div class="container">
+        <nav class="sidebar">
+            <div class="logo">
+                <i class="ph-fill ph-lightning"></i>
+                <span>STUDY SYNC</span>
             </div>
-        </section>
+            <ul class="nav-links">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">Dashboard</a></li>
+                <li><a href="#">Add Task</a></li>
+                <li><a href="#">Planner</a></li>
+                <li><a href="#">Profile</a></li>
+            </ul>
+        </nav>
 
-        <section id="tasks" class="page">
-            <h1>Create New Task</h1>
-            <div class="task-form">
-                <input type="text" id="taskInput" placeholder="Enter subject or topic...">
-                <button onclick="addTask()">Add to List</button>
+        <main class="hero">
+            <div class="hero-content">
+                <h3 class="subtitle">NEXT-GEN STUDY PLATFORM</h3>
+                <h1>Master Your Learning with <br> <span class="neon-text">STUDY SYNC</span></h1>
+                <p>Experience the future of intelligent scheduling. Organize tasks and track your academic productivity with neon-precision.</p>
+                
+                <div class="cta-buttons">
+                    <button class="btn-primary">Get Started</button>
+                    <button class="btn-secondary">View Dashboard</button>
+                </div>
             </div>
-            <ul id="taskList"></ul>
-        </section>
-
-        <section id="profile" class="page">
-            <h1>Your Profile</h1>
-            <div class="profile-info">
-                <p><strong>Name:</strong> Alex Student</p>
-                <p><strong>Goal:</strong> 4 Hours/Day</p>
-                <button class="logout-btn">Log Out</button>
-            </div>
-        </section>
-
-    </main>
+        </main>
+    </div>
 
     <script src="script.js"></script>
 </body>
