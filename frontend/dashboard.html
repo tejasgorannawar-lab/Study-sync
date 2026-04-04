@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Study Sync Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <h2 class="logo">⚡ StudySync</h2>
+
+    <ul>
+      <li class="active">Dashboard</li>
+      <li>Add Task</li>
+      <li>Planner</li>
+      <li>Profile</li>
+    </ul>
+  </aside>
+
+  <!-- Main Content -->
+  <main class="main">
+
+    <h1>Productivity Analytics</h1>
+
+    <!-- Cards -->
+    <div class="cards">
+
+      <div class="card">
+        <h3>Completed</h3>
+        <p class="number">1</p>
+      </div>
+
+      <div class="card">
+        <h3>In Progress</h3>
+        <p class="number">1</p>
+      </div>
+
+      <div class="card">
+        <h3>Overdue</h3>
+        <p class="number">3</p>
+      </div>
+
+      <div class="card">
+        <h3>Productivity</h3>
+        <p class="number">25%</p>
+      </div>
+
+    </div>
+
+    <!-- Charts Section -->
+    <div class="charts">
+
+      <div class="chart-box">
+        <h3>Daily Time Allocation</h3>
+        <canvas id="barChart"></canvas>
+      </div>
+
+      <div class="chart-box">
+        <h3>Monthly Trend</h3>
+        <canvas id="lineChart"></canvas>
+      </div>
+
+    </div>
+
+  </main>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
